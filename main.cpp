@@ -20,7 +20,7 @@ int main()
 	gladLoadGL(); // Habilita o uso da OpenGL
 	glViewport(0, 0, 800, 600); // Área da janela que será utilizada
 
-	glClearColor(0.07f, 0.13f, 0.17f, 1.0f); // Cor em RGBA
+	glClearColor(0.0f, 0.5f, 0.5f, 0.0f); // Cor em RGBA
 	glClear(GL_COLOR_BUFFER_BIT);
 	glfwSwapBuffers(minhaJanela); // Atualiza para o próximo frame
 
@@ -43,7 +43,7 @@ int main()
 		"out vec4 color;\n"
 		"void main()\n"
 		"{\n"
-		"color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+		"color = vec4(0.2f, 0.1f, 0.7f, 1.0f);\n"
 		"}\n\0";
 
 	// Criei os shaders
@@ -93,7 +93,7 @@ int main()
 
 	while (!glfwWindowShouldClose(minhaJanela)) // Loop da Aplicação
 	{
-		glClearColor(0.07f, 0.13f, 0.17f, 1.0f); // Cor em RGBA
+		glClearColor(0.0f, 0.5f, 0.5f, 0.0f); // Cor em RGBA
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glUseProgram(shaderProgram);
